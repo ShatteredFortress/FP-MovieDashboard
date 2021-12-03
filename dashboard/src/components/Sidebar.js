@@ -71,6 +71,18 @@ export default function Sidebar() {
           </IconContext.Provider>
           Features
         </NavLink>
+        <NavLink
+          to="/favoritemovies"
+          className="navlink"
+          activeClassName="routeActive"
+        >
+          <IconContext.Provider
+            value={{ className: "sidebarIcons", title: "Favorites page" }}
+          >
+            <IoAccessibility />
+          </IconContext.Provider>
+          Favorite Movies
+        </NavLink>
       </div>
     </div>
   );

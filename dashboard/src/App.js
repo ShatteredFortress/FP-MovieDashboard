@@ -6,6 +6,7 @@ import Moviespage from "./components/Moviespage";
 import Showspage from "./components/Showspage";
 import Authorspage from "./components/Authorspage";
 import Features from './components/Features';
+import Favorites from './components/FavoriteMovies';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/shows" component={Showspage} exact />
           <Route path="/authors" component={Authorspage} exact />
           <Route path="/features" component={Features} exact />
+          <Route path="/favoritemovies" component={Favorites} exact />
         </Switch>
       </Router>
     </div>
