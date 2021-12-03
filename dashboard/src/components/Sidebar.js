@@ -59,6 +59,18 @@ export default function Sidebar() {
           </IconContext.Provider>
           Authors
         </NavLink>
+        <NavLink
+          to="/features"
+          className="navlink"
+          activeClassName="routeActive"
+        >
+          <IconContext.Provider
+            value={{ className: "sidebarIcons", title: "Features page" }}
+          >
+            <IoAccessibility />
+          </IconContext.Provider>
+          Features
+        </NavLink>
       </div>
     </div>
   );
