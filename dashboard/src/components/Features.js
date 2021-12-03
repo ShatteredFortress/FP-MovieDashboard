@@ -3,35 +3,46 @@ import React from 'react'
 import "./Features.css";
 const Features = () => {
     return (
-        <div>
-              <div>
-                  <h1>This is the features page</h1>
+        <div className={"featurespage"}>
+          <h1 id={"mainFeatureh1"}>Features of our Site</h1>
+          <div id={"featurecontainer"}>
+            <section className={"featurebox"}>
+              <h2>Search</h2>
+    
+              <p>
+                Each movie title or show can be searched for in the search bar above
+              </p>
+              <span>This does not include movies not in the set</span>
+              
+            </section>
+            <section className={"featurebox"}>
+              <h2>Clear Filter</h2>
+    
+              <p>
+                Clear the filter movies once your done searching by pressing the clear button. 
+              </p>
+             
+            </section>
+            <section className={"featurebox"}>
+              <h2>Conditional Loading</h2>
+    
+              <p>
+                  Gives users a reasonable experience while they wait for the movies / shows to lead
+              </p>
+             
+            </section>
 
-                  <div id={'featurecontainer'}>
-                    <div id={'featureheader'}>
-                        <div id={'featureone'}>
-                            <h3>Search</h3>
-                            <div>You are allowed to search for videos if they are already loaded</div>
-                        </div>
-                        <div id={'featuretwo'}>
-                            <h3>Descriptions</h3>
-                            <div>clicking on a loaded movie or show will allow the description to be fetched</div>
-
-                        </div>
-                        <div id={'featurethree'}>
-                            <h3></h3>
-                        </div>
-                        <div id={'featurefour'}>
-                            <h3></h3>
-                        </div>
-
-
-                    </div>
-
-                  </div>
-                </div>        
+            <section className={"featurebox"}>
+              <h2>Descriptions</h2>
+    
+              <p>
+                  clicking on a movies poster will allow for users to fetch and display movie /show descriptions
+              </p>
+             
+            </section>
+          </div>
         </div>
-    )
+      );
 }
 
 export default Features
